@@ -1,16 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Route, Routes, Link } from 'react-router-dom';
+import About from './pages/About';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello from V2</h1>
+    <div>
+      <header>
+        <Link to="/">HOME</Link>
       </header>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Projects" element={<Projects />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
