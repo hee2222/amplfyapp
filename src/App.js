@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import './App.scss';
+import './App.css';
 import { useLocation, Route, Routes, Link } from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
