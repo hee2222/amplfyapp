@@ -1,10 +1,34 @@
+import { gsap } from 'gsap';
+import React, { useRef, useEffect } from 'react';
+
 const About = () => {
+  const boxRef = useRef();
+
+  useEffect(() => {
+    gsap.to(boxRef.current, { rotation: '+=360' });
+  });
+
+  const onEnter = ({ currentTarget }) => {
+    gsap.to(currentTarget, { backgroundColor: 'greenyellow' });
+  };
+  const onLeave = ({ currentTarget }) => {
+    gsap.to(currentTarget, { backgroundColor: 'lemonchiffon' });
+  };
+
   return (
-    <div>
-      <h1>ABOUT</h1>
-      <p>리액트 라우터를 사용해 보는 프로젝트입니다.</p>
+    <div
+      className="box"
+      ref={boxRef}
+      onMouseEnter={onEnter}
+      onMouseLeave={onLeave}
+    >
+      <h1>HELLO</h1>
     </div>
   );
 };
 
 export default About;
+
+// gsap.defaults({
+//   overwrite: true,
+// });

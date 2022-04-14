@@ -1,0 +1,110 @@
+@font-face {
+  font-family: font;
+  src: url('../public/assets/PPCirka-Bold.woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: font;
+  src: url('../public/assets/PPCirka-Light.woff');
+  font-weight: 300;
+}
+:root {
+  --linkColor: springgreen;
+}
+body {
+  font-family: font;
+  background-color: lemonchiffon;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  position: fixed;
+  padding: 20px;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li, p, a, div, ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  text-decoration: none;
+}
+a, a:active {
+  color: var(--linkColor);
+}
+a:hover {
+  filter: invert(70%);
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  line-height: 1.2;
+  text-align: center;
+}
+h1 {
+  font-size: 70px;
+}
+nav li a {
+  font-size: 120px;
+  text-align: center;
+}
+.slogan {
+  font-size: 400px;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+  -webkit-text-stroke: 1px royalblue;
+  color: rgba(0,0,0,0);
+}
+.slogan span {
+  color: royalblue;
+}
+.box {
+  width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  background-color: green;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circle.sm {
+  width: 30px;
+  height: 30px;
+}
+.circle.md {
+  width: 60px;
+  height: 60px;
+}
+.circle.lg {
+  width: 90px;
+  height: 90px;
+}
+.cone {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid red;
+  border-radius: 50%;
+}
