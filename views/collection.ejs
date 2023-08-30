@@ -1,0 +1,43 @@
+<section class="col-section">
+  <div class="container">
+    <div class="col">
+      <% for(var x = 0; x < thisCollecton.length; x++){ %>
+      <div class="col-list all-in">
+        <div class="col-title-wrap">
+          <h1 class="col-list-title"><%=thisCollecton[x].title%></h1>
+          <h1 class="col-list-count"><%= thisCollecton[x].images %></h1>
+        </div>
+        <div class="col-grid">
+          <% for(var i = 1; i <= thisCollecton[x].images; i++) { %>
+          <div class="light-item" data-num="data-<%= x %>-<%= i %>">
+            <img
+              src="/images/<%= thisCollecton[x].imageSrc %>/<%= thisCollecton[x].imageName %>-<%= i %>.webp"
+              alt="<%=thisCollecton[x].title%>"
+            />
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <%}%>
+    </div>
+  </div>
+</section>
+<div class="white-back"></div>
+<section class="light-box">
+  <img />
+  <h1 class="light-box-title light-after">23 SUMMER #3</h1>
+  <div class="count-wrap light-after">
+    <span class="label-s now">1</span>
+    <span class="label-s">/</span>
+    <span class="label-s count">52</span>
+  </div>
+  <div class="arrow left light-after">
+    <img src="/images/arrow-left.svg" alt="" />
+  </div>
+  <div class="arrow right light-after">
+    <img src="/images/arrow-right.svg" alt="" />
+  </div>
+  <a class="h-close label-s light-after">CLOSE</a>
+</section>
+
+<%- include('partials/footer.ejs') %>

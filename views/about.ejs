@@ -1,0 +1,36 @@
+<section class="about-section all-in">
+  <div class="container">
+    <div class="tab">
+      <div class="link-wrap">
+        <a data-tab="luckymarche" href="/" class="label-s">LUCKY MARCHÉ</a>
+        <a data-tab="luckylematch" href="/" class="label-s">Deuce</a>
+      </div>
+      <div class="cont-wrap body-r">
+        <div data-tab="luckymarche" class="tab-cont">
+          <%- __('about-marche') -%>
+        </div>
+        <div data-tab="luckylematch" class="tab-cont">
+          <%- __('about-deuce') -%>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-license label-s">© 2023 LUCKY MARCHÉ</div>
+  <canvas class="webgl all-in"></canvas>
+</section>
+<%- include('partials/footer.ejs') %>
+
+<script
+  type="module"
+  src="https://unpkg.com/three@0.125.2/build/three.js"
+></script>
+<script
+  type="module"
+  src="https://unpkg.com/three@0.125.2/examples/js/controls/OrbitControls.js"
+></script>
+<script
+  type="module"
+  src="https://unpkg.com/three@0.125.2/examples/js/loaders/GLTFLoader.js"
+></script>
+
+<script type="module" src="/js/3d.js"></script>

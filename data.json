@@ -1,0 +1,105 @@
+{
+    "main": {
+        "images": 14
+    },
+    "product": [
+        {
+            "title": "Spring Tweed Jacket",
+            "cat": "outer",
+            "price": "₩232,300",
+            "url": "",
+            "desc": "FINE-KNIT PENCIL SKIRT MADE WITH RESPONSIBLE WOOL, FEATURING AN ELASTICIZED WAISTBAND.",
+            "images": [
+                "c1.webp",
+                "c2.webp",
+                "c3.webp"
+            ]
+        }
+    ],
+    "archive": [
+        {
+            "title": "SEONGSU 2025",
+            "cat": "collaboration",
+            "year": "2025",
+            "images": [
+                "2023fall1st/c-1.webp",
+                "2023fall1st/c-2.webp",
+                "2023fall1st/c-3.webp"
+            ]
+        }
+    ],
+    "collection": [
+        {
+            "title": "23 fall 2nd",
+            "cat": "lm",
+            "imageSrc": "2023fall2nd",
+            "imageName": "c",
+            "images": 9
+        },
+        {
+            "title": "23 fall 1st",
+            "cat": "lm",
+            "imageSrc": "2023fall1st",
+            "imageName": "c",
+            "images": 16
+        },
+        {
+            "title": "23 spring 2nd",
+            "cat": "lm",
+            "imageSrc": "2023spring2nd",
+            "imageName": "c",
+            "images": 11
+        },
+        {
+            "title": "23 spring 1st",
+            "cat": "lm",
+            "imageSrc": "2023spring1st",
+            "imageName": "c",
+            "images": 12
+        },
+        {
+            "title": "23 summer 3rd",
+            "cat": "lm",
+            "imageSrc": "2023summer3rd",
+            "imageName": "c",
+            "images": 12
+        },
+        {
+            "title": "23 summer 2nd",
+            "cat": "lm",
+            "imageSrc": "2023summer2nd",
+            "imageName": "c",
+            "images": 16
+        },
+        {
+            "title": "23 summer 1st",
+            "cat": "lm",
+            "imageSrc": "2023summer1st",
+            "imageName": "c",
+            "images": 18
+        }
+    ],
+    "stocklist": [
+        {
+            "title": "성수마르쉐 2231",
+            "map": "https://www.google.co.kr/maps/place/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%B1%EB%8F%99%EA%B5%AC+%EC%84%B1%EC%88%98%EB%8F%991%EA%B0%80+668-61/data=!3m1!4b1!4m6!3m5!1s0x357ca49c314c068b:0xa31bd1e2b25588de!8m2!3d37.5465292!4d127.043142!16s%2Fg%2F11bzltx_b4?hl=ko&entry=ttu",
+            "loca": "서울특별시 성동구 성수동1가 668 - 61 1층",
+            "open": "11:00 ~ 20:00",
+            "tel": "02-498-9761"
+        },
+        {
+            "title": "롯데백화점 부산본점 ",
+            "map": "https://www.google.co.kr/maps/place/%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C+%EB%B6%80%EC%82%B0%EC%A7%84%EA%B5%AC+%EA%B0%80%EC%95%BC%EB%8C%80%EB%A1%9C+772/data=!3m1!4b1!4m6!3m5!1s0x3568eb6e16767571:0xf0235252a8dc188a!8m2!3d35.1566418!4d129.0560026!16s%2Fg%2F11bzk9x4xr?hl=ko&entry=ttu",
+            "loca": "부산광역시 부산진구 가야대로 772 (부전동) 부전동 503-15 롯데백화점 부산본점 7층 럭키마르쉐",
+            "open": "10:30 ~ 20:00",
+            "tel": "15770001"
+        },
+        {
+            "title": "스타필드 고양점",
+            "map": "https://www.google.co.kr/maps/place/%EA%B2%BD%EA%B8%B0%EB%8F%84+%EA%B3%A0%EC%96%91%EC%8B%9C+%EB%8D%95%EC%96%91%EA%B5%AC+%EA%B3%A0%EC%96%91%EB%8C%80%EB%A1%9C+1955/data=!3m1!4b1!4m6!3m5!1s0x357c971406de6589:0x1a25ae250ca7bfd3!8m2!3d37.6470834!4d126.8947881!16s%2Fg%2F11tjfgk_2l?hl=ko&entry=ttu",
+            "loca": "경기 고양시 덕양구 고양대로 1955 2층 럭키마르쉐",
+            "open": "10:00 ~ 22:00",
+            "tel": "010-2440-7099"
+        }
+    ]
+}

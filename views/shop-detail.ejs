@@ -1,0 +1,50 @@
+<section class="detail-section">
+  <div class="detail-title all-in">
+    <h1><%= thisProduct.title %></h1>
+  </div>
+  <div class="thumb-wrap all-in">
+    <% for(var i = 0; i < thisProduct.images.length; i++) { %>
+    <a href="#detail-image<%= i %>" id="thumb-image<%= i %>">
+      <img src="/images/<%= thisProduct.images[i] %>" alt="" />
+    </a>
+    <% } %>
+  </div>
+
+  <div class="detail-grid all-in">
+    <div class="detail-info">
+      <div class="info-motion mobile">
+        <ul class="body-r ">
+          <% thisProduct.desc.forEach((elem) => { %>
+          <li class="mobile"><%= elem %></li>
+          <% }) %>
+      </div>
+      <div class="info-inner">
+        <ul class="body-r pc">
+          <% thisProduct.desc.forEach((elem) => { %>
+          <li class="pc"><%= elem %></li>
+          <% }) %>
+        </ul>
+        <p class="label-s">₩<%= thisProduct.price.toLocaleString('ko-KR') %></p>
+        <p class="label-s mobile">Details</p>
+      </div>
+      <a
+        href="https://www.kolonmall.com/LUCKYMARCHE/List/133020161317"
+        class="button-m"
+        target="_blank"
+        rel="noopener noreferrer"
+        >BUY IT NOW</a
+      >
+    </div>
+    <div class="detail-scroll">
+      <div class="detail-images">
+        <% for(var j = 0; j < thisProduct.images.length; j++) { %>
+        <img
+          id="detail-image<%= j %>"
+          src="/images/<%= thisProduct.images[j] %>"
+          alt=""
+        />
+        <% } %>
+      </div>
+    </div>
+  </div>
+</section>

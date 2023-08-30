@@ -1,0 +1,39 @@
+<section class="shop-section">
+  <div class="shop-grid">
+    <div class="shop-cate all-in">
+      <div class="dropdown">
+        <div class="dropdown-toggle">
+          <h1><%= params %></h1>
+        </div>
+        <div class="dropdown-inner">
+          <% if(params !== "ALL") { %><a href="/shop"><h1>ALL</h1></a><% } %> <%
+          if(params !== "outer") { %>
+          <a href="/shop-cat/outer"><h1>OUTER</h1></a><% } %> <% if(params !==
+          "top") { %><a href="/shop-cat/top"><h1>TOP</h1></a><% } %> <%
+          if(params !== "bottom") { %><a href="/shop-cat/bottom"
+            ><h1>BOTTOM</h1></a
+          ><% } %> <% if(params !== "one-piece") { %><a
+            href="/shop-cat/one-piece"
+            ><h1>ONE-PIECE</h1></a
+          ><% } %> <% if(params !== "acc") { %><a href="/shop-cat/acc"
+            ><h1>ACC</h1></a
+          ><% } %>
+        </div>
+      </div>
+      <h1 class="count"><%= pData.length %></h1>
+    </div>
+    <% for(var i = 0; i < pData.length; i++) { %>
+    <a href="/shop/<%= pData[i].title %>" class="all-in">
+      <img
+        src="/images/<%= pData[i].images[0] %>"
+        alt="<%= pData[i].title %>"
+      />
+      <div class="product-info">
+        <p class="label-s"><%= pData[i].title %></p>
+        <p class="label-s">₩<%= pData[i].price.toLocaleString('ko-KR')%></p>
+      </div>
+    </a>
+    <% } %>
+  </div>
+</section>
+<%- include('partials/footer.ejs') %>

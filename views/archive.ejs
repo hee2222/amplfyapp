@@ -1,0 +1,19 @@
+<section class="archive-section">
+  <div class="container">
+    <% for(var x = 0; x < aData.length; x++){ %>
+    <a href="/archive/<%= aData[x].title %>" class="archive-list all-in">
+      <div class="label-s"><%= aData[x].title %></div>
+      <div class="label-s"><%= aData[x].cat %></div>
+      <div class="label-s"><%= aData[x].year %></div>
+      <img
+        src="/images/<%= aData[x].images[0] %>"
+        alt="<%= aData[x].title %>"
+      />
+    </a>
+    <% } %>
+  </div>
+  <div class="info-wrap">
+    <h1>ARCHIVE</h1>
+    <h1><%= aData.length %></h1>
+  </div>
+</section>

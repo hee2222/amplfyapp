@@ -1,0 +1,45 @@
+<div class="loading">
+  <a href="/" class="loading-logo"><%- include('partials/logo.ejs') %></a>
+  <div class="loading-intro label-s">
+    Classic racket sports-inspired<br />items and unique colors
+  </div>
+</div>
+
+<div class="slogan label-s">
+  Classic racket sports-inspired<br />items and unique colors
+</div>
+
+<div class="slider-wrap">
+  <div class="slider">
+    <div class="slide-motion">
+      <% for(var j = 1; j <= cData.images; j++) {%>
+      <a href="/#" class="slide">
+        <span style="background-image: url('/images/main/c-<%= j %>.webp')">
+        </span>
+      </a>
+      <% } %>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="slide-motion">
+      <% for(var j = cData.images; j >= 1; j--) { %>
+      <a href="/#" class="slide">
+        <span style="background-image: url('/images/main/c-<%= j %>.webp')">
+        </span>
+      </a>
+      <% } %>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="slide-motion">
+      <% for(var j = 1; j <= cData.images; j++) { var mixJ =
+      Math.floor((Math.random() * (cData.images - 1)) + 1) %>
+      <a href="/#" class="slide">
+        <span style="background-image: url('/images/main/c-<%= mixJ %>.webp')">
+        </span>
+      </a>
+      <% } %>
+    </div>
+  </div>
+</div>
+<div class="bottom-license label-s">© 2023 LUCKY MARCHÉ</div>

@@ -1,0 +1,20 @@
+<section class="light-box archive">
+  <img
+    id="detail-image"
+    src="/images/<%= thisArchive.images[0] %>"
+    alt="<%= thisArchive.title %>"
+  />
+  <h1 class="light-box-title"><%= thisArchive.title %></h1>
+  <div class="count-wrap">
+    <span class="label-s now">1</span>
+    <span class="label-s">/</span>
+    <span class="label-s count"><%= thisArchive.images.length %></span>
+  </div>
+  <div class="arrow left">
+    <img src="/images/arrow-left.svg" alt="" />
+  </div>
+  <div class="arrow right">
+    <img src="/images/arrow-right.svg" alt="" />
+  </div>
+  <a class="h-close label-s" href="/archive">CLOSE</a>
+</section>

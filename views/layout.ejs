@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title><%= title %></title>
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="<%= title || 'LUCKY MARCHÉ' %>" />
+    <meta
+      name="description"
+      content="Lucky Marché Lucky Le Match suggests an all-day
+    active wear for all racket plays, such as
+    tennis, golf, and pickleball."
+    />
+    <meta property="og:title" content="<%= title || 'LUCKY MARCHÉ' %>" />
+    <meta
+      property="og:description"
+      content="Lucky Marché Lucky Le Match suggests an all-day
+      active wear for all racket plays, such as
+      tennis, golf, and pickleball."
+    />
+    <meta
+      property="og:image"
+      content="https://uploads-ssl.webflow.com/5b0fd0925f4fe207127c1de0/64db2f83a6baab24d8e32bbe_og.jpg"
+    />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="<%= page %>">
+    <%- include('partials/header.ejs') %>
+    <main><%- body %></main>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollSmoother.min.js"></script>
+    <script src="/js/SplitText.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"
+      integrity="sha512-AWDq5V1aZW5392Wm63Y2qUKK5MuksXgQVx4YMx5LqLOk4Tnzu2aSNyd/Uqwil/kIm9pikPDk6B626B7H3vq1GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/script.js"></script>
+    <%- script %>
+  </body>
+</html>

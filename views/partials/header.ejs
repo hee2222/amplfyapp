@@ -1,0 +1,105 @@
+<div class="header-wrap">
+  <header>
+    <div class="header-top">
+      <a href="/" class="main-logo"> <%- include('logo.ejs') %> </a>
+      <a
+        href="/lucky-marche"
+        class="h-link label-s header-trigger <%= page === 'collection' ? 'active' : '' %>"
+        >COLLECTION</a
+      >
+      <a
+        href="/archive"
+        class="h-link label-s <%= page === 'archive' ? 'active' : '' %>"
+        >ARCHIVE</a
+      >
+      <a
+        href="/shop"
+        class="h-link label-s <%= page === 'shop' ? 'active' : '' %>"
+        >SHOP</a
+      >
+      <a
+        href="/stocklist"
+        class="h-link label-s <%= page === 'stocklist' ? 'active' : '' %>"
+        >STOCKLIST</a
+      >
+      <a
+        href="/about"
+        class="h-link label-s <%= page === 'about' ? 'active' : '' %>"
+        >ABOUT</a
+      >
+      <div class="m-header-link label-s">MENU</div>
+    </div>
+  </header>
+  <div class="m-header-menu">
+    <div class="m-h-collection m-on">
+      <a href="/lucky-marche" class="m-h-link">COLLECTION</a>
+      <!-- <div class="col-wrap">
+        <div>
+          <a href="/lucky-marche" class="wrap">
+            <img src="/images/2023fall2nd/c-1.webp" alt="" />
+            <span  class="label-s">LUCKY MARCHÉ</ㅁ>
+          </a>
+        </div>
+        <div>
+          <a href="/lucky-le-match" class="wrap">
+            <img src="/images/2023fall2nd/c-2.webp" alt="" />
+            <span  class="label-s">LUCKY LE MATCH</span>
+          </a>
+        </div>
+      </div> -->
+      <div class="m-social">
+        <a
+          class="label-s"
+          href="https://www.facebook.com/luckymarche.official"
+          target="_blank"
+          rel="noopener noreferrer"
+          >FACEBOOK</a
+        >
+        <a
+          class="label-s"
+          href="https://www.instagram.com/luckymarche"
+          target="_blank"
+          rel="noopener noreferrer"
+          >INSTAGRAM</a
+        >
+      </div>
+      <div class="m-lang">
+        <a
+          class="label-s <%= currentLocale === 'kr' ? 'active' : '' %>"
+          href="/setlang/kr"
+          >KR</a
+        >
+        <a
+          class="label-s <%= currentLocale === 'en' ? 'active' : '' %>"
+          href="/setlang/en"
+          >EN</a
+        >
+        <a
+          class="label-s <%= currentLocale === 'cn' ? 'active' : '' %>"
+          href="/setlang/cn"
+          >CN</a
+        >
+      </div>
+    </div>
+    <a class="m-h-link m-on" href="/archive">ARCHIVE</a>
+    <a class="m-h-link m-on" href="/shop">SHOP</a>
+    <a class="m-h-link m-on" href="/stocklist">STOCKLIST</a>
+    <a class="m-h-link m-on" href="/about">ABOUT</a>
+  </div>
+  <!-- <div class="header-contents"> -->
+  <!-- <a href="/" class="h-close label-s">CLOSE</a> -->
+  <!-- <a class="content-link" href="/lucky-marche"
+      ><span class="label-s">LUCKY MARCHÉ</span>
+      <img src="/images/2023fall2nd/c-1.webp" alt="" />
+    </a>
+    <a class="content-link" href="/lucky-le-match"
+      ><span class="label-s">LUCKY LE MATCH</span>
+      <img src="/images/2023fall2nd/c-2.webp" alt="" />
+    </a>
+    <a class="content-link" href="/about"
+      ><span class="label-s">© 2023 LUCKY MARCHÉ</span>
+
+      <img src="/images/c3.jpg" alt="" />
+    </a>
+  </div> -->
+</div>
